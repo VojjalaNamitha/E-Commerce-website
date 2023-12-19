@@ -1,0 +1,63 @@
+/* Header.css */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #C33764 10%, #7176a2 100%);
+  color: #ecf0f1;
+  z-index: 100;
+  font-family: 'Arial', sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-left: 10px;
+  padding: 10px 15px; /* Fixed height for buttons */
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #262d31;
+  color: #fff;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center; /* Align emojis vertically */
+  justify-content: space-evenly;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn img {
+  margin-right: 5px; /* Adjust margin for better spacing between text and emoji */
+}
+
+input {
+  flex-grow: 1;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
